@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Portal 2026</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-card { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); text-align: center; width: 320px; }
+        .header-bar { background: #008080; color: white; padding: 10px; border-radius: 10px 10px 0 0; margin: -40px -40px 30px -40px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #008080; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background: #006666; }
+    </style>
+</head>
+<body>
+
+<div class="login-card">
+    <div class="header-bar">
+        <h3>CBSE RESULT 2026</h3>
+    </div>
+    <p>Enter details to view result</p>
+    <input type="text" id="myRoll" placeholder="Roll Number">
+    <input type="text" id="mySchool" placeholder="School Code">
+    <button onclick="goToLink()">View Result</button>
+</div>
+
+<script>
+function goToLink() {
+    var roll = document.getElementById('myRoll').value;
+    var school = document.getElementById('mySchool').value;
+
+    // REPLACE "12345" with YOUR actual Roll Number
+    // REPLACE "67890" with YOUR actual School Code
+    // REPLACE "https://www.google.com" with the link you want to open
+    
+    if (roll === "22609965" && school === "66934") {
+        window.location.href = "https://cdn.phototourl.com/free/2026-05-13-a4ed8cc3-9a84-4755-a7b9-5bdadc9c4ae5.png"; 
+    } else {
+        alert("Invalid Details. Access Denied.");
+    }
+}
+</script>
+
+</body>
+</html>
